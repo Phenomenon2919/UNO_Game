@@ -2,20 +2,20 @@
 
 ## Input format
 * *Input would be provided from the server*
-The game state provided by the server consists of the following information in this exact order:
+* The game state provided by the server consists of the following information in this exact order:
 1. Number of players
 2. Number of rounds in the game
 3. Round ID, R
 4. Player ID, P , followed by cards with player P at end of round R. The individual cards in the deck are separated by a comma(','). The player ID and deck are separated by a colon(':'). This is repeated for all players. Note that the deck will be empty for the winner and thus will be not be included in round state.
 5. '0' signifying data for round R has ended and data for next round will begin.
 
-Each of the above values are separated by pipes('||') before sending to client. This entire string
+* Each of the above values are separated by pipes('||') before sending to client. This entire string
 is sent to the client terminated by a newline character('\n'). Here is a sample game state sent
 by server to client:
 
 **3||2||1||1:2,0,S,W||3:0,1,S||0||2||2:F,6||3:4,5,W,3,0||0||**
 
-Here is an expanded version of the above input with explanation of each field:
+* Here is an expanded version of the above input with explanation of each field:
 Field Description
 3 --> Number of players
 2 --> Number of rounds
