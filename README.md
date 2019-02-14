@@ -1,6 +1,6 @@
-#Program to derive the winner of a UNO game.
+# Program to derive the winner of a UNO game.
 
-##Input format
+## Input format
 * *Input would be provided from the server*
 The game state provided by the server consists of the following information in this exact order:
 1. Number of players
@@ -28,7 +28,7 @@ Field Description
 3:4,5,W,3,0 --> Cards with player 3 at end of current round(2).
 0 --> End of state of round 2.
 
-##Output format
+## Output format
 The server expects a JSON object as response from the client. The JSON object must contain
 the following information:
 • Round winners: A dictionary mapping between round IDs and round winning player IDs.
@@ -42,6 +42,6 @@ be the JSON string
 
 * Output is sent back to the server
 
-##Executing the python program
+## Executing the python program
 * $ python2 client.py <Server IP Address> <Server port>
  
