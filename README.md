@@ -43,5 +43,5 @@ be the JSON string
 * Output is sent back to the server
 
 ## Executing the python program
-* $ python2 client.py *__Server IP Address__* *__Server port__*
+* $ python2 client.py <_Server_IP_Address_> <_Server_port_>
  
